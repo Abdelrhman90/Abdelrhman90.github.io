@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Franklin', sans-serif;
+}
+.container{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.illustration {
+    width: 30%;
+   
+}
+
+.logo{
+    width:60px;
+}
+.err{
+   left:470px;
+   font-size: 0.7rem;
+   color: red;
+   position: absolute;
+}
+.heading {
+    font-weight:300 ;
+    color: hsl(0, 0%, 59%);
+   margin-bottom: 0;
+   font-size: 2rem;
+   padding-top: 10px;
+}
+
+strong {
+    color:#000;
+}
+
+p {
+    font-size: 0.9rem;
+    margin-top:10px;
+}
+
+.input {
+    padding: 30px;
+
+}
+
+input {
+    padding: 10px 120px 10px 20px;
+    border-radius: 20px;
+    border: 1px solid hsl(223, 100%, 88%);
+   
+}
+.fab {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid hsl(223, 100%, 88%) ;
+    border-radius: 50%;
+    text-align: center;
+    color: hsl(223, 87%, 63%);
+    line-height: 100px;
+    font-size: 0.9rem;
+    padding : 7px;
+    margin :40px 5px 20px;
+
+    
+}
+.fab:hover{
+    background-color:hsl(223, 87%, 63%) ;
+    color: #fff;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+::placeholder{
+    color : hsl(0, 0%, 59%);
+    opacity: 50%;
+   
+}
+a{
+    text-decoration: none;
+}
+
+.btn {
+    border-radius: 20px;
+    border: none;
+    padding:11px 35px;
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    font-size: 0.7rem;
+    margin-left: 5px;
+    box-shadow: 2px 2px 4px hsl(223, 100%, 84%) ;
+    text-shadow: 2px 2px 3px hsl(221, 36%, 65%);
+}
+
+a:hover{
+    background-color:hsl(223, 77%, 71%);
+}
+.copy{
+    font-size: 0.7rem;
+    color : hsl(0, 0%, 59%);
+    
+}
+@media (max-width:375px) {
+    .logo {
+        width:60px;
+    }
+          
+    .heading {
+        font-size: 23px;
+        padding:25px 0 10px 0;
+    }
+    input{
+        margin-bottom: 5px;
+}
+    .input{
+        padding:20px
+    }
+    .btn {
+       padding: 12px 130px ;
+    }
+    .illustration{
+        width:80%;
+        padding-top:50px;;
+    }
+    .err{
+        position: relative;
+        left:0;
+        transform: translateY(-8px);
+    }
+    .copy{
+        text-align: center;
+        padding-top: 50px;
+
+    }
+}
