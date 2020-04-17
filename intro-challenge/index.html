@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+ 
+</head>
+<body>
+  <div class="container">
+    <div class="left-side">
+      <h1>Learn to code by watching others</h1>
+
+      <p class="leftside-text"> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. </p>
+    
+    </div>
+    <div class="right-side">
+      <p class="top-bar"><strong>Try it free 7 days</strong> then $20/mo. thereafter</p> 
+      <form  action="">
+      <div>
+        <img class="first-icon err-icon  display" src="images/icon-error.svg" alt="">
+        <input class="first" type="text" name="firstName" placeholder="FirstName"> <br>
+        <div class="err-message first-err"></div>
+      </div>
+      <div>
+        <img  class="last-icon err-icon  display" src="images/icon-error.svg" alt="">
+        <input class="last" type="text" name="lastName" placeholder="LastName "> <br>
+        <div class="err-message last-err"></div>
+      </div>
+      <div>
+        <img class="email-icon err-icon  display" src="images/icon-error.svg" alt="">
+        <input class="email" type="text" name="emailAddress" placeholder="Email Address "> <br>
+        <div class="err-message email-err"></div>
+      </div>
+      <div>
+        <img class="password-icon  err-icon display" src="images/icon-error.svg" alt="">
+        <input class="password" type="password" name="Password" placeholder="Password"> <br>
+        <div class="err-message password-err"></div>
+      </div>
+      <button class="btn" type="submit" >CLAIM YOUR FREE TRIAL </button>
+      <p class="form-text">By clicking the button, you are agreeing to our <span>Terms and Services</span> </p> 
+      </form>
+
+      
+            
+    
+      
+    </div>
+   
+  
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+}
+
+.container{
+   display: grid;
+   grid-template-columns: auto auto;
+}
+
+.left-side{
+    margin: 150px 50px 0 150px;
+    width:450px;
+    color:#fff;
+    line-height: 1.1;
+    
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.leftside-text{
+    width:500px;
+    line-height: 1.7;
+}
+
+.right-side{
+    margin-top:20px;
+}
+
+.top-bar {
+    background-color: hsl(248, 32%, 49%);
+    padding: 20px 35px;
+    width:500px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    box-shadow: 2px 4px  hsl(0, 57%, 64%);
+
+}
+
+form {
+    background-color: #fff;
+    width:500px;
+    text-align: center;
+    padding: 20px 0 30px;
+    border-radius: 10px;
+    box-shadow: 2px 4px  hsl(0, 57%, 64%);
+    position: relative;
+
+
+
+    
+}
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+input{
+    padding: 15px 240px 15px 20px ;
+    margin:10px auto ;
+    border-radius: 5px;
+    border: 1px solid rgb(197, 197, 197);
+    
+}
+
+.btn {
+    color: #fff;
+    background-color: hsl(154, 59%, 51%);
+    padding:15px 125px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    border-style: none;
+    margin : 15px 0 15px;
+    box-shadow: 2px 2px 3px hsl(154, 59%, 44%) ;
+    border-radius: 5px;
+    
+    
+
+}
+
+.form-text{
+   bottom: 20px;;
+   font-size: 0.6rem;
+   color:hsl(246, 25%, 77%);
+   letter-spacing: 0.5px;
+
+}
+
+span {
+    color: hsl(0, 100%, 74%) ;
+    font-weight: bold;
+}
+
+.err-icon{
+    position: absolute;
+    right:55px;
+    transform: translateY(20px);
+    
+}
+
+.err {
+    border: 1px solid red;
+}
+
+.display {
+    display: none;
+}
+
+.err-message {
+    color: red;
+    font-size: 0.7rem;;
+    transform: translateX(-35px);
+    text-align: right;
+}
+
+@media only screen and (max-width:375px) {
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .left-side{
+        margin: 50px auto ;
+        text-align: center;
+       width: 70%;
+    }
+    .right-side{
+        padding:0;
+        
+    }
+    h1{
+        font-size: 1.8rem;
+        line-height: 1.5;
+        width:100%;
+       
+    }
+    .leftside-text{
+        margin: 0;
+        width:100%;
+        font-size: 0.8rem;;
+    }
+    .top-bar{
+        width:90%;
+        margin:10px auto;
+    }
+    form{
+        width:90%;
+        margin: 10px auto;
+        
+    }
+
+    input{
+        padding:15px 100px 15px 20px;
+    }
+    .btn {
+       padding: 15px 50px;
+    }
+}
