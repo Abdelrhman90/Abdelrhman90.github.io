@@ -42,7 +42,7 @@ body {
     padding-left: 50px;
 }
 
-.heading{
+h2{
     font-size: 3rem;
     font-weight: 300;
     padding-top:50px;
@@ -105,7 +105,7 @@ a{
 }
 
 
-@media (max-width:350px){
+@media (max-width:375px){
     .container{
         display: flex;
         flex-wrap: wrap-reverse;
