@@ -39,13 +39,17 @@ h2 {
 }
 
 .dark:before{
-    content: 'Dark Mode';
+    content: 'Light Mode';
     font-size:0.7rem;
     position: absolute;
     top: 14%;
     right:5%;
     font-weight: 700;
     color: hsl(228, 34%, 66%);
+}
+
+.light:before{
+  content: 'Dark Mode';
 }
 
 .heading{
@@ -248,7 +252,7 @@ input:checked + .slider:before {
 
 .y-icon:before{
   content:'';
-  background: url('images/icon-youTube.svg') no-repeat;
+  background: url('images/icon-youtube.svg') no-repeat;
   width: 10%;
   height: 25px;
   position: absolute;
