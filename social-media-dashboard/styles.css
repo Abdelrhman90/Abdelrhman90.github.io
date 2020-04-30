@@ -1,0 +1,394 @@
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+
+    background: linear-gradient(to bottom, hsl(232, 19%, 15%) 250px,  hsl(230, 17%, 14%) 20px);
+}
+
+h1  {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.light-theme{
+  background: linear-gradient(to bottom, hsl(225, 100%, 98%) 250px,  hsl(0, 0%, 100%) 50px);
+  padding-bottom: 80px;
+}
+
+
+h2 {
+  margin: 20px 10% 0;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.nav-bar p{
+    margin: 5px 0;
+    color: hsl(228, 34%, 66%);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+
+.nav-bar{
+  margin : 30px 10% 35px;
+  clear: both;
+  overflow: hidden;
+  color: #fff;
+  position: relative;
+
+}
+
+.dark:before{
+    content: 'Dark Mode';
+    font-size:0.7rem;
+    position: absolute;
+    top: 14%;
+    right:5%;
+    font-weight: 700;
+    color: hsl(228, 34%, 66%);
+}
+
+.heading{
+    float: left;
+}
+.light-heading{
+  color: #000;
+}
+
+.switch {
+    width:40px;
+    height:19px;
+    position: relative;
+    float: right;
+    display:block;
+    margin-top: 5px;
+
+}
+
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    background-image: linear-gradient( to right , hsl(210, 78%, 56%) , hsl(146, 68%, 55%) );
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left:0;
+    transition: ease-in-out 0.4s;
+    border-radius: 34px;
+}
+
+
+
+.slider:before{
+    position: absolute;
+    content: '';
+    height: 15px;
+    width:16px;
+    background-color:  hsl(230, 17%, 14%);
+    left: 3px;
+    bottom: 2px;
+    transition: ease-in-out 0.4s;
+    border-radius: 50%;
+}
+
+
+
+input:checked + .slider:before {
+    transform: translateX(18px);
+
+}
+
+.light-slider{  
+  background-color:rgb(175, 175, 175) ;
+  background-image: none;
+}
+
+.light-slider:before{
+  background-color:#fff ;
+}
+.hero-container{
+    color: #fff;
+    margin : 50px 10% 10px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-column-gap: 25px;
+    grid-template-rows: auto auto;
+    grid-row-gap: 20px;
+    margin-top:15px;
+}
+
+.light-hero {
+  color: black;
+} 
+.square {
+  text-align: center;
+  background-color:hsl(228, 28%, 20%) ;
+  padding: 3px 3px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.square:hover{
+  background-color: hsl(228, 27%, 29%);
+}
+.light-square{
+  background-color:hsl(227, 47%, 96%) ;
+}
+
+.light-square:hover{
+  background-color:hsl(228, 20%, 90%) ;
+}
+
+.facebook-wrapper {
+  position: relative;
+  background-color: hsl(203, 89%, 53%);
+  padding: 3px 0 0;
+  border-radius: 8px;}
+
+
+.twitter-wrapper{
+  position: relative;
+  background-color:  hsl(195, 100%, 50%);
+  padding: 3px 0 0;
+  border-radius: 8px;
+}
+
+
+.instagram-wrapper{
+  position: relative;
+  background-image:linear-gradient(to right , hsl(37, 97%, 70%) , hsl(329, 70%, 58%));
+  padding: 3px 0 0;
+  border-radius: 8px;
+}
+
+
+.youtube-wrapper{
+  position: relative;
+  background-color: hsl(348, 97%, 39%);
+  padding: 3px 0 0;
+  border-radius: 8px;
+}
+
+
+.name {
+    margin-top: 30px;
+    position: relative;
+    font-size: 0.7rem;
+    color:hsl(228, 34%, 66%);
+    font-weight: 700;
+    padding-left: 20px;
+}
+.f-icon:before{
+    content:'';
+    background: url('images/icon-facebook.svg') no-repeat;
+    width: 10%;
+    height: 25px;
+    position: absolute;
+    left:32%;
+    transform: translateY(-3px);
+
+}
+
+.numbers{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 25px 0 0;
+}
+.follows{
+    color: hsl(228, 34%, 66%);
+    letter-spacing: 5.5px;
+    font-size: 0.7rem;
+    opacity: 70%;
+    margin-top: 0;
+}
+
+.today-stats{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: hsl(163, 72%, 41%);
+    margin-top: 30px;
+    position: relative;
+}
+.today-stats:before{
+    content: '';
+    background: url('images/icon-up.svg') no-repeat;
+    width: 10%;
+    height: 10px;
+    position: absolute;
+    left:33%;
+    top: 5px;
+}
+
+.t-icon:before{
+    content:'';
+    background: url('images/icon-twitter.svg') no-repeat;
+    width: 10%;
+    height: 25px;
+    position: absolute;
+    left:32%;
+    transform: translateY(-3px);
+
+}
+
+.i-icon:before{
+  content:'';
+  background: url('images/icon-instagram.svg') no-repeat;
+  width: 10%;
+  height: 25px;
+  position: absolute;
+  left:26%;
+  transform: translateY(-3px);
+}
+
+.y-icon:before{
+  content:'';
+  background: url('images/icon-youTube.svg') no-repeat;
+  width: 10%;
+  height: 25px;
+  position: absolute;
+  left:30%;
+  transform: translateY(-3px);
+}
+
+.y-stats{
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: hsl(348, 97%, 39%);
+  margin-top: 30px;
+  position: relative;
+}
+
+.y-stats:before{
+    content: '';
+    background: url('images/icon-down.svg') no-repeat;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left:33%;
+    top: 5px;
+}
+
+
+
+.overview-square{
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 5px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  height:120px;
+
+}
+
+.overview-square:hover{
+  background-color: hsl(228, 27%, 29%);
+  cursor: pointer;
+}
+
+.light-overview-square{
+  background-color:hsl(227, 47%, 96%) ;
+  color: #000;
+}
+
+.light-overview-square:hover{
+  background-color:hsl(228, 16%, 87%)  ;
+}
+
+.stats {
+  font-size: 0.8rem;
+  color:hsl(228, 34%, 66%);
+  font-weight: 700;
+  margin: 30px 20px 0;
+
+}
+
+.stat-nums{
+  font-size: 2rem;
+  font-weight: 700;
+  margin:20px;
+}
+
+.stat-icon{
+  position:absolute;
+  right:30px;
+  top:30px;
+}
+
+.upstat-percent{
+  position: absolute;
+  bottom: 15px;
+  right:30px ;
+  font-size: 0.7rem;
+  color:hsl(163, 72%, 41%);
+  font-weight: 700;
+}
+.upstat-percent::before{
+  content: '';
+  background: url('images/icon-up.svg') no-repeat;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left:-10px;
+  top: 5px;
+}
+
+
+
+.downstat-percent{
+  position: absolute;
+  bottom: 15px;
+  right:30px ;
+  font-size: 0.7rem;
+  color:hsl(348, 97%, 39%);
+  font-weight: 700;
+}
+
+.downstat-percent::before{
+  content: '';
+  background: url('images/icon-down.svg') no-repeat;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left:-10px;
+  top: 5px;
+}
+
+.light-hero {
+  color: black;
+}
+
+
+@media only screen and (max-width:375px){
+    
+    .hero-container{
+    display: grid;
+    grid-template-columns: 110%;
+    justify-content: center;
+  }
+  
+  .today-stats:before {
+    left:36%;
+  }
+  .y-stats:before{
+    left:36%;
+  }
+  .nav-bar{
+    margin-left: 22px;
+  }
+  .dark:before{
+    left: 0;
+    top: 75px;
+  }
+  .switch{
+    margin-top: 20px;
+  }
+  
+
+
+}
